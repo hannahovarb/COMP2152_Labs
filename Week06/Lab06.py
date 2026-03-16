@@ -226,8 +226,8 @@ def log_to_csv(filename, command, target, result, status):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # *** YOUR CODE HERE ***
 with open(filename, "a", newline="") as file:
-        writer = csv.writer(file)
-        writer.writerow([timestamp, command, target, result, status])
+    writer = csv.writer(file)
+    writer.writerow([timestamp, command, target, result, status])
 
 
 def read_csv_log(filename):
